@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     if (!searchTerm) {
       setLoading(true);
-      fetch(`https://api.punkapi.com/v2/beers?page=${pageNumber}&per_page=20
+      fetch(`https://api.punkapi.com/v2/beers?page=${pageNumber}&per_page=21
 `)
         .then((res) => res.json())
         .then(
