@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Beer } from "../types/BeerTypes";
 
 const BeerView = () => {
@@ -30,7 +30,7 @@ const BeerView = () => {
 
   return !loading && beerData ? (
     <div className="flex w-screen justify-center p-5">
-      <div className="flex flex-col md:flex-row gap-8">
+      <div className="flex flex-col sm:flex-row gap-8">
         <img className="md:h-96 h-auto" src={beerData.image_url} />
         <div style={{ maxWidth: "350px" }}>
           <div className="flex justify-between align-bottom">
